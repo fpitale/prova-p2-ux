@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OfficeSupply Online - Versão B</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fa;
+  color: #333;
+}
+header {
+  background: #123d70;
+  color: white;
+  padding: 24px 7%;
+}
+header h1 { margin: 0; }
+nav { margin-top: 15px; }
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.container {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 20px;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px #00000012;
+}
+.product img {
+  width: 100%;
+  max-width: 420px;
+  object-fit: contain;
+}
+.info { flex: 1; min-width: 260px; }
+h2 { color: #123d70; font-size: 30px; }
+.tag {
+  display: inline-block;
+  background: #e5f5eb;
+  color: #16733b;
+  padding: 9px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.price {
+  font-size: 36px;
+  color: #e36b16;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.benefits {
+  background: #f0f5fc;
+  padding: 18px;
+  border-radius: 10px;
+  line-height: 2;
+}
+button {
+  background: #168044;
+  color: white;
+  border: 0;
+  padding: 18px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 340px;
+  margin-top: 20px;
+}
+button:hover { background: #105e32; }
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #123d70;
+  color: white;
+}
+@media(max-width:650px) {
+  .product { padding: 18px; }
+  h2 { font-size: 25px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>OfficeSupply Online</h1>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Promoções</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="product">
+    <div>
+      <img src="../img001.jpeg" alt="Kit Escritório Premium">
+    </div>
+    <div class="info">
+      <span class="tag">DESTAQUE ESPECIAL</span>
+      <h2>Kit Escritório Premium Clássico</h2>
+      <p>Categoria: Kits Essenciais</p>
+      <p class="price">R$ 299,90</p>
+      <p>Tenha mais organização e praticidade no seu dia a dia com um kit completo para o escritório.</p>
+
+      <div class="benefits">
+        <strong>Confira os benefícios:</strong><br>
+        ✓ Canetas de ponta fina<br>
+        ✓ Caderno capa dura A5<br>
+        ✓ Bloco de notas adesivas<br>
+        ✓ Organizador de mesa compacto
+      </div>
+
+      <button onclick="alert('Produto adicionado ao carrinho!')">
+        QUERO MEU KIT AGORA
+      </button>
+      <p>Mais praticidade e organização para sua rotina!</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  OfficeSupply Online - Todos os direitos reservados
+</footer>
+</body>
+</html>
